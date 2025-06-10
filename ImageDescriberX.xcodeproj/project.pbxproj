@@ -6,33 +6,91 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		C0BA5B4B2DF3C9950040EA3A /* ImageDescriberX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDescriberX.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		C03E0E722DF4F08D006B57CB /* ShakeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E0E712DF4F08D006B57CB /* ShakeEffect.swift */; };
+		C0BA5B4F2DF3C9950040EA3A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA5B4E2DF3C9950040EA3A /* App.swift */; };
+		C0BA5B512DF3C9950040EA3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA5B502DF3C9950040EA3A /* ContentView.swift */; };
+		C0BA5B532DF3C9960040EA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BA5B522DF3C9960040EA3A /* Assets.xcassets */; };
+		C0BA5B5E2DF3C9C20040EA3A /* DescriberManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA5B5D2DF3C9C20040EA3A /* DescriberManager.swift */; };
+		C0BA5B622DF3D3180040EA3A /* BlurUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = C0BA5B612DF3D3180040EA3A /* BlurUIKit */; };
+		C0BA5B642DF3D38C0040EA3A /* BlurUIKit++.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA5B632DF3D38C0040EA3A /* BlurUIKit++.swift */; };
+		C0BA5B672DF3D4B80040EA3A /* PHPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA5B662DF3D4B80040EA3A /* PHPhotoPicker.swift */; };
+		C0F250C82DF5D65A00ABC559 /* Font++.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F250C52DF5D65A00ABC559 /* Font++.swift */; };
+		C0F250CC2DF5D66800ABC559 /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0F250CB2DF5D66800ABC559 /* SpaceGrotesk-Bold.ttf */; };
+		C0F250D02DF5D68A00ABC559 /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0F250CF2DF5D68A00ABC559 /* Satoshi-Regular.otf */; };
+		C0F250D12DF5D68A00ABC559 /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0F250CD2DF5D68A00ABC559 /* Satoshi-Black.otf */; };
+		C0F250D22DF5D68A00ABC559 /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0F250CE2DF5D68A00ABC559 /* Satoshi-Bold.otf */; };
+		C0F250D42DF5D7F000ABC559 /* GridPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F250D32DF5D7F000ABC559 /* GridPattern.swift */; };
+		C0F250D62DF622B000ABC559 /* DescribeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F250D52DF622B000ABC559 /* DescribeRequest.swift */; };
+		C0F250D92DF6494800ABC559 /* UploadBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F250D82DF6494800ABC559 /* UploadBoxView.swift */; };
+		C0F250DB2DF65F4400ABC559 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F250DA2DF65F4400ABC559 /* Models.swift */; };
+		C0F250DD2DF65FA600ABC559 /* RequestInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F250DC2DF65FA600ABC559 /* RequestInfoView.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C0BA5B4D2DF3C9950040EA3A /* ImageDescriberX */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageDescriberX;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		C03E0E702DF4EF62006B57CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03E0E712DF4F08D006B57CB /* ShakeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeEffect.swift; sourceTree = "<group>"; };
+		C0BA5B4B2DF3C9950040EA3A /* ImageDescriberX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDescriberX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BA5B4E2DF3C9950040EA3A /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		C0BA5B502DF3C9950040EA3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0BA5B522DF3C9960040EA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0BA5B5D2DF3C9C20040EA3A /* DescriberManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriberManager.swift; sourceTree = "<group>"; };
+		C0BA5B632DF3D38C0040EA3A /* BlurUIKit++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlurUIKit++.swift"; sourceTree = "<group>"; };
+		C0BA5B662DF3D4B80040EA3A /* PHPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPhotoPicker.swift; sourceTree = "<group>"; };
+		C0F250C52DF5D65A00ABC559 /* Font++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font++.swift"; sourceTree = "<group>"; };
+		C0F250CB2DF5D66800ABC559 /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		C0F250CD2DF5D68A00ABC559 /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.otf"; sourceTree = "<group>"; };
+		C0F250CE2DF5D68A00ABC559 /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		C0F250CF2DF5D68A00ABC559 /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
+		C0F250D32DF5D7F000ABC559 /* GridPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPattern.swift; sourceTree = "<group>"; };
+		C0F250D52DF622B000ABC559 /* DescribeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeRequest.swift; sourceTree = "<group>"; };
+		C0F250D82DF6494800ABC559 /* UploadBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadBoxView.swift; sourceTree = "<group>"; };
+		C0F250DA2DF65F4400ABC559 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C0F250DC2DF65FA600ABC559 /* RequestInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0BA5B482DF3C9950040EA3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BA5B622DF3D3180040EA3A /* BlurUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03E0E662DF4EE47006B57CB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA5B632DF3D38C0040EA3A /* BlurUIKit++.swift */,
+				C0BA5B662DF3D4B80040EA3A /* PHPhotoPicker.swift */,
+				C03E0E712DF4F08D006B57CB /* ShakeEffect.swift */,
+				C0F250D32DF5D7F000ABC559 /* GridPattern.swift */,
+				C0BA5B5D2DF3C9C20040EA3A /* DescriberManager.swift */,
+				C0F250D52DF622B000ABC559 /* DescribeRequest.swift */,
+				C0F250DA2DF65F4400ABC559 /* Models.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C03E0E672DF4EE7D006B57CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C0F250C52DF5D65A00ABC559 /* Font++.swift */,
+				C0F250CB2DF5D66800ABC559 /* SpaceGrotesk-Bold.ttf */,
+				C0F250CD2DF5D68A00ABC559 /* Satoshi-Black.otf */,
+				C0F250CE2DF5D68A00ABC559 /* Satoshi-Bold.otf */,
+				C0F250CF2DF5D68A00ABC559 /* Satoshi-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C0BA5B422DF3C9950040EA3A = {
 			isa = PBXGroup;
 			children = (
-				C0BA5B4D2DF3C9950040EA3A /* ImageDescriberX */,
+				C0BA5B5C2DF3C9B20040EA3A /* ImageDescriberX */,
 				C0BA5B4C2DF3C9950040EA3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +101,37 @@
 				C0BA5B4B2DF3C9950040EA3A /* ImageDescriberX.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C0BA5B5C2DF3C9B20040EA3A /* ImageDescriberX */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA5B652DF3D3980040EA3A /* Resources */,
+				C03E0E662DF4EE47006B57CB /* Classes */,
+				C0F250D72DF6493600ABC559 /* Views */,
+				C0BA5B4E2DF3C9950040EA3A /* App.swift */,
+			);
+			path = ImageDescriberX;
+			sourceTree = "<group>";
+		};
+		C0BA5B652DF3D3980040EA3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA5B522DF3C9960040EA3A /* Assets.xcassets */,
+				C03E0E702DF4EF62006B57CB /* Info.plist */,
+				C03E0E672DF4EE7D006B57CB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0F250D72DF6493600ABC559 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA5B502DF3C9950040EA3A /* ContentView.swift */,
+				C0F250D82DF6494800ABC559 /* UploadBoxView.swift */,
+				C0F250DC2DF65FA600ABC559 /* RequestInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +149,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				C0BA5B4D2DF3C9950040EA3A /* ImageDescriberX */,
-			);
 			name = ImageDescriberX;
 			packageProductDependencies = (
+				C0BA5B612DF3D3180040EA3A /* BlurUIKit */,
 			);
 			productName = ImageDescriberX;
 			productReference = C0BA5B4B2DF3C9950040EA3A /* ImageDescriberX.app */;
@@ -94,6 +181,9 @@
 			);
 			mainGroup = C0BA5B422DF3C9950040EA3A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C0BA5B602DF3D3180040EA3A /* XCRemoteSwiftPackageReference "BlurUIKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0BA5B4C2DF3C9950040EA3A /* Products */;
 			projectDirPath = "";
@@ -109,6 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F250D02DF5D68A00ABC559 /* Satoshi-Regular.otf in Resources */,
+				C0F250D12DF5D68A00ABC559 /* Satoshi-Black.otf in Resources */,
+				C0F250D22DF5D68A00ABC559 /* Satoshi-Bold.otf in Resources */,
+				C0F250CC2DF5D66800ABC559 /* SpaceGrotesk-Bold.ttf in Resources */,
+				C0BA5B532DF3C9960040EA3A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +214,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F250DB2DF65F4400ABC559 /* Models.swift in Sources */,
+				C0F250D42DF5D7F000ABC559 /* GridPattern.swift in Sources */,
+				C0BA5B512DF3C9950040EA3A /* ContentView.swift in Sources */,
+				C0BA5B642DF3D38C0040EA3A /* BlurUIKit++.swift in Sources */,
+				C0F250DD2DF65FA600ABC559 /* RequestInfoView.swift in Sources */,
+				C0BA5B5E2DF3C9C20040EA3A /* DescriberManager.swift in Sources */,
+				C03E0E722DF4F08D006B57CB /* ShakeEffect.swift in Sources */,
+				C0F250C82DF5D65A00ABC559 /* Font++.swift in Sources */,
+				C0BA5B672DF3D4B80040EA3A /* PHPhotoPicker.swift in Sources */,
+				C0F250D62DF622B000ABC559 /* DescribeRequest.swift in Sources */,
+				C0BA5B4F2DF3C9950040EA3A /* App.swift in Sources */,
+				C0F250D92DF6494800ABC559 /* UploadBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,14 +358,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageDescriberX/Preview Content\"";
+				DEVELOPMENT_TEAM = 48S57XVT54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageDescriberX/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DescriberX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -266,6 +377,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.ImageDescriberX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -279,14 +394,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageDescriberX/Preview Content\"";
+				DEVELOPMENT_TEAM = 48S57XVT54;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageDescriberX/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DescriberX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,6 +413,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.ImageDescriberX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0BA5B602DF3D3180040EA3A /* XCRemoteSwiftPackageReference "BlurUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/BlurUIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0BA5B612DF3D3180040EA3A /* BlurUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0BA5B602DF3D3180040EA3A /* XCRemoteSwiftPackageReference "BlurUIKit" */;
+			productName = BlurUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0BA5B432DF3C9950040EA3A /* Project object */;
 }
