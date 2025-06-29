@@ -13,6 +13,7 @@ class ImageDescriberManager {
     var importedImage: UIImage?
     var imageDescription: String?
     var describeRequest = DescribeRequest() {
+        // Save the request on UserDefaults. When the app restarts, the options will be loaded.
         didSet { saveRequestToUserDefaults() }
     }
     var isLoading: Bool = false
@@ -51,7 +52,7 @@ class ImageDescriberManager {
         
         var request = URLRequest(url: endpoint)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("B2Pnz9Xn965OD6QY3x6rS5kUKQUKZjYlurTfQEgROe4", forHTTPHeaderField: "Authorization")
+        request.addValue("B2Pnz9Xn965OD6QY3x6rS5kUKQUKZjYlurTfQEgROe4", forHTTPHeaderField: "Authorization") // This field is fake, keep it if you want to publish to AppStore.
         request.httpMethod = "POST"
         
         let jsonData: [String: Any] = [
@@ -71,13 +72,16 @@ class ImageDescriberManager {
         return description
     }
     
+    func redescribeImage() async -> String {
+        return await _describeImage()
+    }
     
     func onImportImage(_ image: UIImage) {
         importedImage = image
     }
     
     
-    func clearImage() {
+    func reset() {
         withAnimation {
             importedImage = nil
             imageDescription = nil
@@ -94,14 +98,12 @@ class ImageDescriberManager {
     private func saveRequestToUserDefaults() {
         let data = try? JSONEncoder().encode(describeRequest)
         UserDefaults.standard.set(data, forKey: userDefaultsKey)
-        print("Saved")
     }
     
     
     private func loadSavedRequest() {
         if let data = UserDefaults.standard.data(forKey: userDefaultsKey) {
             describeRequest = try! JSONDecoder().decode(DescribeRequest.self, from: data)
-            print("Loaded")
         }
     }
 }

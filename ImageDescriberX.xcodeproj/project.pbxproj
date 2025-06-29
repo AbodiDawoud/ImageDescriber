@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDA13F022E10ADF800F16FA4 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA13F012E10ADF800F16FA4 /* DescriptionView.swift */; };
+		BDA13F132E10E7EF00F16FA4 /* NotchMyProblem in Frameworks */ = {isa = PBXBuildFile; productRef = BDA13F122E10E7EF00F16FA4 /* NotchMyProblem */; };
 		C03E0E722DF4F08D006B57CB /* ShakeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E0E712DF4F08D006B57CB /* ShakeEffect.swift */; };
 		C0BA5B4F2DF3C9950040EA3A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA5B4E2DF3C9950040EA3A /* App.swift */; };
 		C0BA5B512DF3C9950040EA3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA5B502DF3C9950040EA3A /* ContentView.swift */; };
@@ -28,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDA13F012E10ADF800F16FA4 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		C03E0E702DF4EF62006B57CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03E0E712DF4F08D006B57CB /* ShakeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeEffect.swift; sourceTree = "<group>"; };
 		C0BA5B4B2DF3C9950040EA3A /* ImageDescriberX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDescriberX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BA5B622DF3D3180040EA3A /* BlurUIKit in Frameworks */,
+				BDA13F132E10E7EF00F16FA4 /* NotchMyProblem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,7 @@
 				C0BA5B502DF3C9950040EA3A /* ContentView.swift */,
 				C0F250D82DF6494800ABC559 /* UploadBoxView.swift */,
 				C0F250DC2DF65FA600ABC559 /* RequestInfoView.swift */,
+				BDA13F012E10ADF800F16FA4 /* DescriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			name = ImageDescriberX;
 			packageProductDependencies = (
 				C0BA5B612DF3D3180040EA3A /* BlurUIKit */,
+				BDA13F122E10E7EF00F16FA4 /* NotchMyProblem */,
 			);
 			productName = ImageDescriberX;
 			productReference = C0BA5B4B2DF3C9950040EA3A /* ImageDescriberX.app */;
@@ -183,6 +189,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C0BA5B602DF3D3180040EA3A /* XCRemoteSwiftPackageReference "BlurUIKit" */,
+				BDA13F112E10E7EF00F16FA4 /* XCRemoteSwiftPackageReference "NotchMyProblem" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0BA5B4C2DF3C9950040EA3A /* Products */;
@@ -216,6 +223,7 @@
 			files = (
 				C0F250DB2DF65F4400ABC559 /* Models.swift in Sources */,
 				C0F250D42DF5D7F000ABC559 /* GridPattern.swift in Sources */,
+				BDA13F022E10ADF800F16FA4 /* DescriptionView.swift in Sources */,
 				C0BA5B512DF3C9950040EA3A /* ContentView.swift in Sources */,
 				C0BA5B642DF3D38C0040EA3A /* BlurUIKit++.swift in Sources */,
 				C0F250DD2DF65FA600ABC559 /* RequestInfoView.swift in Sources */,
@@ -447,6 +455,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BDA13F112E10E7EF00F16FA4 /* XCRemoteSwiftPackageReference "NotchMyProblem" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Aeastr/NotchMyProblem";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 		C0BA5B602DF3D3180040EA3A /* XCRemoteSwiftPackageReference "BlurUIKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TimOliver/BlurUIKit";
@@ -458,6 +474,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BDA13F122E10E7EF00F16FA4 /* NotchMyProblem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDA13F112E10E7EF00F16FA4 /* XCRemoteSwiftPackageReference "NotchMyProblem" */;
+			productName = NotchMyProblem;
+		};
 		C0BA5B612DF3D3180040EA3A /* BlurUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C0BA5B602DF3D3180040EA3A /* XCRemoteSwiftPackageReference "BlurUIKit" */;
