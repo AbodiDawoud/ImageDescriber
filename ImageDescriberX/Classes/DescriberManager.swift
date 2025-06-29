@@ -89,12 +89,6 @@ class ImageDescriberManager {
     }
     
     
-    func copyResults() {
-        UIImpactFeedbackGenerator(style: .light).impactOccurred()
-        UIPasteboard.general.string = imageDescription
-    }
-    
-    
     private func saveRequestToUserDefaults() {
         let data = try? JSONEncoder().encode(describeRequest)
         UserDefaults.standard.set(data, forKey: userDefaultsKey)

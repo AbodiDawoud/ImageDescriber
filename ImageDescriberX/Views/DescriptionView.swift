@@ -37,7 +37,7 @@ struct DescriptionView: View {
                 
                 VStack(alignment: .leading, spacing: 25) {
                     HStack {
-                        Button(action: manager.copyResults) {
+                        Button(action: copyResults) {
                             Label("Copy", systemImage: "document.on.document")
                                 .labelStyle(PlainLabelStyle(.indigo))
                         }
@@ -65,7 +65,7 @@ struct DescriptionView: View {
         .overlay {
             TopologyButtonsView(
                 leadingButton: {
-                    Button(action: dismissOverlay) {
+                    Button(action: dismiss.callAsFunction) {
                         Image(systemName: "arrow.left")
                             .modifier(NotchButtonStyleModifier())
                     }
@@ -89,6 +89,7 @@ struct DescriptionView: View {
     
     func regenerateDescription() {
         if isRegenerating { return }
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
         
         Task {
             isRegenerating = true
@@ -96,10 +97,10 @@ struct DescriptionView: View {
             isRegenerating = false
         }
     }
-    
-    func dismissOverlay() {
-        dismiss()
-        manager.reset()
+
+    func copyResults() {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        UIPasteboard.general.string = description
     }
 }
 
@@ -122,7 +123,7 @@ fileprivate struct PlainLabelStyle: LabelStyle {
         .font(.satoshiRegular(15))
         .padding(.horizontal, 8)
         .padding(.vertical, 6)
-        .background(Color.gray.quaternary, in: .buttonBorder)
+        .background(.thinMaterial, in: .buttonBorder)
         .overlay {
             RoundedRectangle(cornerRadius: 8).stroke(.gray.tertiary, lineWidth: 1)
         }

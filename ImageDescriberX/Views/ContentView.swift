@@ -35,7 +35,7 @@ struct ContentView: View {
         .sheet(isPresented: $showImagePicker) {
             PHPhotoPicker(onSelect: manager.onImportImage).ignoresSafeArea()
         }
-        .fullScreenCover(item: $manager.imageDescription) {
+        .fullScreenCover(item: $manager.imageDescription, onDismiss: manager.reset) {
             DescriptionView($0).environment(manager)
         }
     }
