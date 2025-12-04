@@ -3,13 +3,10 @@
 </p>
 
 # Image Describer
-[![swift-version](https://img.shields.io/badge/swift-5-orange.svg)](https://github.com/apple/swift)
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-
-This app using [Alt-Image](https://www.alttextai.net/) as it's backend for better and more accurate image describing.
+This app using this random [Image-to-Prompt](https://imageprompt.org/image-to-prompt) service as it's backend as it provides accurate image describing.
 
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/588bff63-b51d-442b-a253-3d08bcac70a6" height="300">
-<img src="https://github.com/user-attachments/assets/f9629ecd-d2c6-4a00-84e6-53400af979ec" height="300">
+<img height="350" alt="Home_2" src="https://github.com/user-attachments/assets/b58318df-6f1b-4f01-affc-367f0347f7c5" />
+<img height="350" alt="Results" src="https://github.com/user-attachments/assets/7ed9531c-c320-4651-8708-5bb6a3d714d8" />
