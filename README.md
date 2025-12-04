@@ -3,7 +3,7 @@
 </p>
 
 # Image Describer
-This app using this random [Image-to-Prompt](https://imageprompt.org/image-to-prompt) service as it's backend as it provides accurate image describing.
+This app using this random [Image-to-Prompt](https://imageprompt.org/image-to-prompt) service as it's backend as it provides free, unrestricted and accurate image describing.
 
 
 ## Screenshots
