@@ -1,6 +1,6 @@
 //
-//  PHImagePickerController.swift
-//  SwiftStarterKit
+//  PHPhotoPicker.swift
+//  ImageDescriberX
 
 
 

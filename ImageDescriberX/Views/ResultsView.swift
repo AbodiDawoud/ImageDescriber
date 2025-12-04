@@ -7,10 +7,11 @@ import NotchMyProblem
 
 
 
-struct DescriptionView: View {
+struct ResultsView: View {
     @State private var description: String
     @State private var isRegenerating: Bool = false
     @State private var showImagePicker: Bool = false
+    @State private var haveCopiedDescription: Bool = false
     
     @Environment(ImageDescriberManager.self) private var manager
     @Environment(\.dismiss) private var dismiss
@@ -21,7 +22,7 @@ struct DescriptionView: View {
     
     
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             Image(uiImage: manager.importedImage!)
                 .resizable()
                 .scaledToFit()
@@ -39,6 +40,7 @@ struct DescriptionView: View {
                     HStack {
                         Button(action: copyResults) {
                             Label("Copy", systemImage: "document.on.document")
+                                .symbolRenderingMode(.hierarchical)
                                 .labelStyle(PlainLabelStyle(.indigo))
                         }
                         
@@ -50,17 +52,20 @@ struct DescriptionView: View {
                     .buttonStyle(.plain)
                     
                     
-                    Text(description.replacingOccurrences(of: "\"", with: ""))
+                    Text(description)
                         .font(.satoshiRegular(18))
                         .textSelection(.enabled)
+                        .padding(.horizontal, 2)
                         .redacted(reason: isRegenerating ? .placeholder : .privacy)
                 }
                 .padding(.vertical, 18)
                 .padding(.horizontal, 12)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.horizontal)
         }
         .statusBarHidden()
+        .persistentSystemOverlays(.hidden)
         .animation(.smooth, value: isRegenerating)
         .overlay {
             TopologyButtonsView(
@@ -105,9 +110,10 @@ struct DescriptionView: View {
 }
 
 
-// Helper styles
+
 fileprivate struct PlainLabelStyle: LabelStyle {
     let color: Color
+    @Environment(\.colorScheme) private var scheme
     
     init(_ color: Color) {
         self.color = color
@@ -116,16 +122,18 @@ fileprivate struct PlainLabelStyle: LabelStyle {
     func makeBody(configuration: Configuration) -> some View {
         HStack {
             configuration.icon
-                .foregroundColor(color)
+                .foregroundStyle(color.gradient)
+                .fontWeight(.semibold)
             
             configuration.title
         }
         .font(.satoshiRegular(15))
-        .padding(.horizontal, 8)
-        .padding(.vertical, 6)
-        .background(.thinMaterial, in: .buttonBorder)
+        .padding(.horizontal, 10)
+        .frame(height: 35)
+        .background(.gray.opacity(scheme == .light ? 0.04 : 0.2), in: .capsule)
         .overlay {
-            RoundedRectangle(cornerRadius: 8).stroke(.gray.tertiary, lineWidth: 1)
+            Capsule()
+                .stroke(.gray.tertiary, lineWidth: 1)
         }
     }
 }
@@ -141,4 +149,20 @@ fileprivate struct NotchButtonStyleModifier: ViewModifier {
             .foregroundStyle(Color.primary)
             .clipShape(Capsule())
     }
+}
+
+#Preview {
+    HStack {
+        Button(action: {}) {
+            Label("Copy", systemImage: "document.on.document")
+                .symbolRenderingMode(.hierarchical)
+                .labelStyle(PlainLabelStyle(.indigo))
+        }
+        
+        Button(action: {}) {
+            Label("Regenerate", systemImage: "arrow.clockwise")
+                .labelStyle(PlainLabelStyle(.green))
+        }
+    }
+    .buttonStyle(.plain)
 }
